@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p #{item.description}
+  p $$ #{item.cost}
+
+    if item.inventory<1
+        p Item Not Available 
+    else 
+        p Available
+
+
+  a(href='/catalog/item/remove') Remove Item
+
+    block deleteContent

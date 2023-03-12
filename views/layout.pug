@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  div(class='header') 
+    p(class='storeTitle')  Stuff Store
+    div(class='headerLinks')
+      a(class='link' href='/') Home
+      a(class='link' href='/catalog/item/create') Create Item
+      a(class='link' href='/catalog/info') Info 
+      a(class='link' href = '/catalog/contact') Contact
+
+
+  body
+    block content

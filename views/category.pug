@@ -1,0 +1,16 @@
+extends layout
+
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p Shop by Category 
+  div(class='catDiv')
+    each item in item_list
+      a(class='catLink' href=item.url) #{item.name}
+      
+      
+
+    else
+      li There are no Categories.

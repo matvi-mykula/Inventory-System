@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p Shop by Category 
+  div(class='catDiv')
+    each category in cat_list
+        a(class='catLink' href=category.url) #{category.title} 
+      
+
+ 
+    else
+      li There are no Genres.

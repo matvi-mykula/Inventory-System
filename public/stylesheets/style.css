@@ -1,0 +1,108 @@
+body {
+  /* padding: 50px; */
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  width: 100vw;
+}
+
+a {
+  color: #00b7ff;
+}
+.header {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  /* padding: 5px; */
+  border: 1px solid black;
+  background-color: black;
+}
+.header > * {
+  margin: 5px;
+}
+.storeTitle {
+  font-size: 50px;
+  color: white;
+}
+.headerLinks {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px;
+  justify-content: space-between;
+  margin-left: 20%;
+  width: 40%;
+}
+
+.headerLinks > * {
+  /* margin: 5%; */
+  padding: 2%;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 20%;
+  text-decoration: none;
+  color: lightblue;
+}
+.catDiv {
+  display: flex;
+  flex-direction: column;
+}
+.catLink {
+  padding: 1%;
+  margin: 5px;
+  /* margin-top: 10px;
+  margin-bottom: 20%; */
+  border: 1px solid black;
+  /* border-radius: 5%; */
+  text-decoration: none;
+  color: black;
+}
+.catLink:hover {
+  background-color: aliceblue;
+}
+
+form {
+  padding: 5%;
+  flex: 1 0 120px;
+  max-width: 300px;
+  /* display: flex;
+
+  flex-direction: vertical; */
+  /* flex-wrap: wrap; */
+}
+.form-fields,
+.input-container {
+  flex: 1 0 220px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-fields > input {
+  padding: 5%;
+  align-items: center;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.infoBlurb {
+  justify-content: center;
+  width: fit-content;
+}
+.infoBlurb > p {
+  text-align: center;
+
+  max-width: 50px;
+}
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
